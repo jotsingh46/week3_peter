@@ -10,11 +10,15 @@ namespace c0730244
     {
         static void Main(string[] args)
         {
-            var dog_and_cat = new car();
+            Vehicle dog_and_cat = new car();
+            Vehicle bowling = new car();
+            Console.WriteLine("how many cars:{0}",Vehicle.howManyCars);
+            Console.ReadLine();
         }
     }
     class Vehicle
     {
+        public static int howManyCars=0;
         public String Color = "Blue";
     }
 
@@ -23,6 +27,7 @@ namespace c0730244
         public String Color = "Red";
         public car()
         {
+            Vehicle.howManyCars++;
             Console.WriteLine("My color is " + Color);
             Console.ReadLine();
         }
