@@ -64,6 +64,7 @@ namespace c0730244
     class BookCollection
     {
 
+
     }
 
     class Book : BookCollection
